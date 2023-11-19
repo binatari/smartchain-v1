@@ -44,7 +44,7 @@ const Posts = () => {
   return (
     <div className="flex container mx-auto justify-center gap-4 flex-wrap ">
       {posts.map((post) => (
-        <PostCard {...post} />
+        <PostCard {...post} key={post.id} />
       ))}
     </div>
   );
